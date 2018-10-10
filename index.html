@@ -1,0 +1,323 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alfonso Arriola: Software Developer</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Limelight" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/meditate.png"/>
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127062823-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-127062823-1');
+	</script>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#f_city">NYC Database</a>
+	  <a href="#s_bakery">Bakery</a>
+	  <a href="#a_panel">Admin. Panel</a>
+	  <a href="#jz">Todo App.</a>
+	  <a href="#poke">Pokéapi Call App.</a>
+	  <a href="#a_gallery">Photo Gallery </a>
+	  <a href="#lj">CSS Grid: Lebron</a>
+	  <a href="#rum">Promotional Site</a>
+	  <a href="#mc_embed_signup">Sign-Up Form</a>
+	</div>
+
+	<span onclick="openNav()">Menu</span>
+
+	<nav>
+		<button onclick="openNav()">
+			<img src="images/icons8-menu.svg" alt="menu">
+		</button>
+		<h1> Alfonso L. Arriola</h1>
+	</nav>
+	<div class="container-fluid">
+		<!--   About _________ -->
+		<div class="row">
+			<div class="col about">
+				<p>  
+		          Welcome!  I make web applications, front & back, specializing in <i><b>HTML</b></i>, <i><b>CSS</b></i>, <i><b>Javascript</b></i>, <i><b>Ruby</b></i>, & <i><b>Ruby On Rails</b></i>. Currently getting into <i><b>React</b></i>, because of their view on<i><b> MVC (Model, View, & Controller)</b></i>, and also, it's what the cool kids are into. Below is a link to my résumé and some of my recent projects.      
+		        </p>
+		        <br>
+		        <div class="row justify-content-center">
+		        	<div class="col-4 my_buttons">
+		        		<a href="documents/developer_al_fullstack.pdf" class="btn resume">Résumé</a>
+		        	</div> 	
+		        </div>
+		        <!--  <div class="git_n_site">
+		         	<a href="documents/developer_al_fullstack.pdf" class="rez_link">Résumé</a>
+		         </div> -->
+		          
+		          <br>
+		        <p>
+		          Outside of tech, I'm a Veteran who is unabashedly into Muay Thai, tea, community service and 80's/90's music.  Thanks again for stopping by.
+		        </p>
+			</div>		
+		</div>
+<!--     Projects  _________________ -->
+		 <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="f_city">
+				<figure>
+					<img src="images/freshcity.jpg" class="img-fluid" alt="Fresh City">
+					  <figcaption>
+					  	 <h3> <i> Fresh City</i> </h3>
+					  	<div class="additional">
+					    	<p> A directory & database of free & cheap showers in NYC  </p>
+					    </div>
+					  </figcaption>
+				</figure>
+			<div class="my_buttons">
+				<a href="https://fresh-city.herokuapp.com/?class=nav-link&locale=en" class="site btn">Website</a>
+                <a href="https://github.com/AlfonsoArriola/Fresh_City" class="git btn">Github</a>
+			</div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		       <ul>
+	             <li> Full Stack Project </li>
+	             <li> Built with <i><b>Ruby On Rails</b></i></li>
+	             <li> <i><b>AWS</b></i> for photo upload</li>
+	             <li> Ruby gem <i><b>Devise</b></i> for admin only access</li>
+	             <li> Ruby gem <i><b>i18n</b></i> for multi-lingual use</li>
+	             <li> <i><b>Postgres</b> & </i><i><b>Postico</b></i> for back-end data storage & management</li>
+	             <li> <i><b>SASS</b></i> for styling. </li>
+	           </ul> 
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="s_bakery">
+		      	<figure>
+			 	 <img src="images/bakery.jpg" class="img-fluid" alt="Sweet Spot Bakery">
+			 		<figcaption>
+			 			<h3><i>The Sweet Spot</i></h3>
+			 			    <div class="additional">
+						    	<p> An online menu for a bakery, where users can check out products and sign-up for the newsletter. </p>
+						    </div>
+			 		</figcaption>
+			 	</figure>
+	  
+			 <div class="my_buttons">
+				 <a href="https://floating-lowlands-17827.herokuapp.com/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/Bakery_website" class="git btn">Github</a>
+			 </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		      <ul>
+			  	 <li> Full Stack Project </li>
+	             <li> Built with <i><b>Ruby & Sinatra</b></i></li>
+	             <li> <i><b>Materialize</b></i> for styling </li>
+	             <li> <i><b>Mailman</b></i> for sending e-mails </li>
+	             <li> Full screen video for the Home Page </li>           
+	           </ul> 
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="a_panel">
+		        <figure>
+			 	  <img src="images/panel.jpg" class="img-fluid" alt="Administration Panel">
+			 		<figcaption>
+			 			<h3><i> Coding School </i></h3>
+			 			    <div class="additional">
+						    	<p> An administration panel database in both English & Spanish </p>
+						    	<!-- <a href="#"> Test Link </a> -->
+						    </div>
+			 		</figcaption>
+			 	</figure>
+				
+			 <div class="my_buttons">
+				 <a href="https://pams-panel.herokuapp.com/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/Pams_panel_x" class="git btn">Github</a> 
+			 </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		        <ul>
+	               <li> A Full Stack Project </li>
+	               <li> Built with <i><b>Ruby On Rails</b></i></li>
+	               <li> Creates, Updates, Edits, & Deletes <br>
+	                records for Teachers, Students, Courses, & Classes. </li>
+	               <li> Ruby gem <b><i>Devise</i></b> for admin only access</li>
+	               <li> Ruby gem <i><b>i18n</b></i> for bilingual users.</li>
+	               <li> <i><b>Postgres</b> & </i><i><b>Postico</b></i> for back-end data storage & managements</li>
+	            </ul>
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="jz">
+		      <figure>
+			 	  <img src="images/jay_todo.jpg" class="img-fluid" alt="Jay-z & 99 todos">
+			 		<figcaption>
+			 			<h3><i> Jay-Z To Do List </i></h3>
+			 			    <div class="additional">
+						    	<p> A web app that allows users to create a items to do.  You can list more than 99</p>
+						    	<!-- <a href="#"> Test Link </a> -->
+						    </div>			
+			 		</figcaption>
+			 	</figure>
+
+			 <div class="my_buttons">
+			 	<a href="https://floating-lowlands-17827.herokuapp.com/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/Bakery_website" class="git btn">Github</a> 
+			 </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		         <ul>
+	                 <li> Built with <i><b>React.js</b></i> </li>
+	                 <li> Responsive </li>          
+	             </ul>  
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="poke">
+		      <figure>
+	         	  <img src="images/cherrybomb.jpg" class="img-fluid" alt="Ajax call website">
+	         		<figcaption>
+	         			<h3><i> Pokémon Gym </i></h3>
+			 			    <div class="additional">
+						    	<p> Highlights this Poké-trainer's favorite Pokémon</p>
+						    	<!-- <a href="#"> Test Link </a> -->
+						    </div>
+	         		</figcaption>
+	         	</figure>
+		
+			  <div class="my_buttons">
+				 <a href="https://alfonsoarriola.github.io/Pokemon_Champions/" class="site btn">Website</a>
+		         <a href="https://github.com/AlfonsoArriola/Pokemon_Champions"class="git btn">Github</a>
+		      </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		       <ul>
+	             <li> Makes a <i><b>GET</b></i> request to pokeapi.co API </li>
+	             <li> uses <b><i>Jquery/AJAX</i></b> </li>
+	             <li> Responsive </li>
+	           </ul>
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" alt="animal_gallery">
+		       <figure>
+			 	  <img src="images/animal_gallery.jpg" class="img-fluid" alt="animal_gallery">
+			 		<figcaption>
+			 			<h3><i> Londolozi </i></h3>
+			 			    <div class="additional">
+						    	<p> Select Photos fron an animal perserve, Londolozi</p>
+						    </div>
+			 		</figcaption>
+			 	</figure>
+		
+			 <div class="my_buttons">
+			 	<a href="https://alfonsoarriola.github.io/animal_perserve_gallery/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/animal_perserve_gallery/tree/master"class="git btn">Github</a>
+			 </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		       <ul>      
+	             <li> Animal & Photographer info shows on hover</li>
+	             <li> Responsive </li>
+	           </ul> 
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="lj">
+			      <figure>
+					  <img src="images/le_bron.png" class="img-fluid" alt="Ajax call website">
+						<figcaption>
+							<h3><i> LeBron James Page </i></h3>
+			 			    <div class="additional">
+						    	<p> A tribute page with some stats and info about Lebron</p>
+						    	
+						    </div>
+						</figcaption>
+					</figure>
+	
+				<div class="my_buttons">
+				 <a href="https://alfonsoarriola.github.io/LeBron/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/LeBron" class="git btn">Github</a>
+	            </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		       <ul>  
+	             <li> Video Background </li>
+	             <li> Flip Card </li>
+	             <li> Responsive </li>
+	           </ul>
+		    </div>
+		  </div>
+
+		  <div class="row">
+		    <div class="col-lg-7 col-md-12 project" id="rum">
+		       <figure>
+			 	  <img src="images/rum.png" class="img-fluid" alt="Rum and coquito recipe site">
+			 		<figcaption>
+			 			<h3><i> Kraken Ghost Rum </i></h3>
+			 			    <div class="additional">
+						    	<p> A promotion for a rum company, that has recipes for vegan & traditional coquito </p>
+						    	
+						    </div>
+			 		</figcaption>
+			 	</figure>
+		
+			 <div class="my_buttons">
+			 	<a href="https://alfonsoarriola.github.io/coquito_site/" class="site btn">Website</a>
+	             <a href="https://github.com/AlfonsoArriola/coquito_site" class="git btn">Github</a>
+			 </div>
+		    </div>
+		    <div class="col-lg-5 col-md-12">
+		       <ul>            
+	             <li> <b><i>Javascript</i></b> for user age verification</li>
+	             <li> <b><i>SASS</i></b> for styling. </li>
+	           </ul>
+		    </div>
+		  </div>
+
+		  <div class="row">
+		  	<div class="col sign_up">
+		  		<div id="mc_embed_signup">
+					<form action="https://alfonsoarriola.us19.list-manage.com/subscribe/post?u=56a7fd9a08ceeb06188667621&amp;id=f42f37cc57" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll">
+						  <label for="mce-EMAIL">Checkout and subcribe to the mailing list</label>
+						    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+					    	<input type="text" name="b_56a7fd9a08ceeb06188667621_f42f37cc57" tabindex="-1" value="">
+					    </div>
+					    <div class="clear">
+					    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="my_buttons sign_up_btn btn"></div>
+					    </div>
+					</form>
+				</div>	  		
+		  	</div>	  	
+		  </div>
+
+		  <div class="row">
+		  	<div class="col">
+		  		<footer>
+				  	by alfonso l. arriola 
+				  	<a href="https://github.com/AlfonsoArriola"><img src="images/gh.png" alt=""></a>
+				  	<a href="https://www.linkedin.com/in/alfonso-arriola/"><img src="images/li.png" alt=""></a>
+				  	<a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a>
+				  </footer>
+		  	</div>
+		  </div>
+
+    </div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

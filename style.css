@@ -1,0 +1,332 @@
+/* ************ Nav Stuff  ******************************** */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: #ec2c2c;
+   /* background-color: #cecece; */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+   /* box-shadow: 2px 2px 2px 2px black;*/
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #211f1f;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+/* Mobile Nav */
+nav{
+    display: block;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ec2c2c;
+    z-index: 3;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #f8f2ed;
+}
+
+button{
+    background: none;
+    border: none;
+    float: left;
+}
+
+nav img{
+    height: 3rem;
+    margin: .25rem;
+}
+
+
+
+/*  **************N  Main Body Content ************************/
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    background: #2a2929;
+    color: #ededed;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.2em;
+}
+
+h1{
+    color: #fbf6f0;
+}
+h1, h3, a{
+    font-family: 'Limelight', cursive;
+}
+
+p{
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+.my_buttons a:link, a:visited{
+    margin: 2rem 1rem;
+    transition: 0.35s; 
+    color: #2a2929;
+}
+
+.resume{
+    background: DodgerBlue;
+}
+
+.git{
+    background: #ffdc7c;
+}
+
+.site{
+    background: #7cc2ff;
+}
+
+.git:hover, .site:hover, .resume:hover{
+    background: #4cffbd;
+    color: LightCyan;
+    border-radius: 50%;
+    font-weight: 1000;
+    text-shadow: .5px .5px DimGray;
+}
+
+.about{
+    margin: 5rem 0rem;
+}
+
+.about p{
+    text-indent: 50px;
+    line-height: 30px;
+    margin: 0rem 3rem;
+}
+
+.about p::first-letter { 
+     font-size: 170%;
+}
+
+figure{
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+    transition:  background .5s;
+}
+
+figure:hover{
+    background: black;
+}
+
+figure:hover img{
+    transform: translate3d(0,0,0) scale(1.3);
+    opacity: .4;
+}
+
+figure:hover .additional {
+    opacity: 1;
+    transform: scale(1);
+}
+
+figure:hover h3 {
+    transform: scale(.7);
+    transition: all .7s ease-in-out;
+    border: none;
+    background: initial;
+    text-decoration: underline;
+}
+
+figcaption {
+    position: absolute;
+    padding: 1em 2em;
+    color: black;
+    text-align: center;
+    top: 0rem; 
+}
+
+figcaption h3{
+    font-weight: bold;
+    font-size: 2em;
+    background: #ec2828;
+    display: inline-block;
+    padding: .5em .7em;
+    color: white;
+    border: 2px solid white;
+}
+
+.additional a{
+    background: none;
+    color: white;
+ 
+}
+
+.additional{
+   opacity: 0;
+   transform: scale(1.3);
+   transition: all .5s;
+}
+
+.additional p{
+    margin: 20px;
+    padding: 0px 10px;
+    color: white;
+}
+
+.additional a{
+    display: inline-block;
+    background: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+}
+
+.project{
+    height: 40rem;
+}
+.project img{
+    width: 90%;
+    height: auto;
+    opacity: .7;
+    transform:  translate3d(0, -20px, 0) scale(1.12);
+    transition: all .5s;
+}
+
+.sign_up{
+    height: 30rem;
+    width: 100vw;
+    padding: 3rem;
+}
+
+#mc_embed_signup{
+    clear:left; 
+    font-size: 1.5em;
+    font-family: 'Limelight', cursive;
+}
+
+label, input{
+    display: block; 
+}
+
+.sign_up_btn{
+    margin: 1.5rem;
+}
+
+footer{
+    height: 8rem;
+    width: 100vw;
+    display: inline-block;
+    padding: 1rem 1rem 3rem 9rem;
+}
+
+footer img{
+    height: 2.4rem;
+    margin: 0rem .7rem;
+}
+
+/*   ***********  Media Queires   ****************/
+
+@media screen and (max-width: 990px) {
+    .project{
+        height: 33rem;
+    }
+
+    ul{
+        margin-bottom: 15rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .project{
+        height: 27rem;
+    }
+
+    ul{
+        margin-bottom: 11rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+   body{
+        font-size: 1.1em;
+    }
+
+    .project{
+        height: 23rem;
+    }
+
+   figcaption h3 {
+        font-size: 1.7em;
+    }
+
+
+@media screen and (max-width: 490px) {
+    h1{
+        font-size: 1.8em;
+    }
+    .project{
+        height: 21rem;
+    }
+
+    ul{
+        margin-bottom: 9rem;
+    }
+    .email{
+        width: 87%;
+    }
+
+
+    footer a{
+        display: block;
+        margin: 3rem 1rem;
+    }
+
+    @media screen and (max-width: 390px) {
+    h1{
+        font-size: 1.6em;
+    }
+
+
+
+
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+}
+    
+}
+
+
+
+
+
+
+
+
