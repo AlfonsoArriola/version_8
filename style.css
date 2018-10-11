@@ -42,7 +42,7 @@
 
 .i_nav div{
     height: 5px;
-    background: #fbf6f0;
+    background: #fff;
     margin: 5px 0;
     border-radius: 24px;
     transition: .3s;
@@ -68,7 +68,6 @@
 
 .i_nav:hover div { 
     width: 50px;
-    background: blue;
 }
 
 /* Mobile Nav */
