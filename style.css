@@ -308,6 +308,7 @@ footer img{
 }
 
 @media screen and (max-width: 790px) {
+    
     .project{
         height: 27rem;
     }
