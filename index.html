@@ -22,6 +22,7 @@
 <body>
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#intro">About</a>
 	  <a href="#f_city">NYC Database</a>
 	  <a href="#s_bakery">Bakery</a>
 	  <a href="#a_panel">Admin. Panel</a>
@@ -36,7 +37,7 @@
 
 	<span onclick="openNav()">Menu</span>
 
-	<nav>
+	<nav id="header_nav">
 		<button onclick="openNav()">
 			<!-- <img src="images/icons8-menu.svg" alt="menu"> -->
 			<a href="#" class="i_nav">
@@ -45,12 +46,18 @@
 			  	<div class="three"></div>
 			</a>
 		</button>
-		<h1> Alfonso L. Arriola</h1>
+		<h1 id="my_title"> Alfonso L. Arriola</h1>
 	</nav>
 	<div class="container-fluid">
 		<!--   About _________ -->
 		<div class="row">
-			<div class="col about">
+			<div class="row">
+				<div c>
+					
+				</div>
+				
+			</div>
+			<div class="col about" id="intro">
 				<p>  
 		          Welcome!  I make web applications, front & back, specializing in <i><b>HTML</b></i>, <i><b>CSS</b></i>, <i><b>Javascript</b></i>, <i><b>Ruby</b></i>, & <i><b>Ruby On Rails</b></i>. Currently getting into <i><b>React</b></i>, because of their view on<i><b> MVC (Model, View, & Controller)</b></i>, and also, it's what the cool kids are into. Below is a link to my résumé and some of my recent projects.      
 		        </p>
@@ -69,7 +76,7 @@
 		</div>
 <!--     Projects  _________________ -->
 		 <div class="row">
-		    <div class="col-lg-7 col-md-12 project" id="f_city">
+		    <div class="col-lg-7 col-md-12 project order-2" id="f_city">
 				<figure>
 					<img src="images/freshcity.jpg" class="img-fluid" alt="Fresh City">
 					  <figcaption>
@@ -84,7 +91,7 @@
                 <a href="https://github.com/AlfonsoArriola/Fresh_City" class="git btn">Github</a>
 			</div>
 		    </div>
-		    <div class="col-lg-5 col-md-12">
+		    <div class="col-lg-5 col-md-12 order-2 order-lg-1">
 		       <ul>
 	             <li> Full Stack Project </li>
 	             <li> Built with <i><b>Ruby On Rails</b></i></li>
@@ -104,7 +111,7 @@
 			 		<figcaption>
 			 			<h3><i>The Sweet Spot</i></h3>
 			 			    <div class="additional">
-						    	<p> An online menu for a bakery, where users can check out products and sign-up for the newsletter. </p>
+						    	<p> An online menu for a bakery, where users can sign-up for the newsletter. </p>
 						    </div>
 			 		</figcaption>
 			 	</figure>
@@ -126,7 +133,7 @@
 		  </div>
 
 		  <div class="row">
-		    <div class="col-lg-7 col-md-12 project" id="a_panel">
+		    <div class="col-lg-7 col-md-12 project order-2" id="a_panel">
 		        <figure>
 			 	  <img src="images/panel.jpg" class="img-fluid" alt="Administration Panel">
 			 		<figcaption>
@@ -143,7 +150,7 @@
 	             <a href="https://github.com/AlfonsoArriola/Pams_panel_x" class="git btn">Github</a> 
 			 </div>
 		    </div>
-		    <div class="col-lg-5 col-md-12">
+		    <div class="col-lg-5 col-md-12 order-2 order-lg-1">
 		        <ul>
 	               <li> A Full Stack Project </li>
 	               <li> Built with <i><b>Ruby On Rails</b></i></li>
@@ -183,7 +190,7 @@
 		  </div>
 
 		  <div class="row">
-		    <div class="col-lg-7 col-md-12 project" id="poke">
+		    <div class="col-lg-7 col-md-12 project order-2" id="poke">
 		      <figure>
 	         	  <img src="images/cherrybomb.jpg" class="img-fluid" alt="Ajax call website">
 	         		<figcaption>
@@ -200,7 +207,7 @@
 		         <a href="https://github.com/AlfonsoArriola/Pokemon_Champions"class="git btn">Github</a>
 		      </div>
 		    </div>
-		    <div class="col-lg-5 col-md-12">
+		    <div class="col-lg-5 col-md-12 order-2 order-lg-1">
 		       <ul>
 	             <li> Makes a <i><b>GET</b></i> request to pokeapi.co API </li>
 	             <li> uses <b><i>Jquery/AJAX</i></b> </li>
@@ -210,7 +217,7 @@
 		  </div>
 
 		  <div class="row">
-		    <div class="col-lg-7 col-md-12 project" alt="animal_gallery">
+		    <div class="col-lg-7 col-md-12 project" id="a_gallery" alt="animal_gallery">
 		       <figure>
 			 	  <img src="images/animal_gallery.jpg" class="img-fluid" alt="animal_gallery">
 			 		<figcaption>
@@ -235,7 +242,7 @@
 		  </div>
 
 		  <div class="row">
-		    <div class="col-lg-7 col-md-12 project" id="lj">
+		    <div class="col-lg-7 col-md-12 project order-2" id="lj">
 			      <figure>
 					  <img src="images/le_bron.png" class="img-fluid" alt="Ajax call website">
 						<figcaption>
@@ -252,7 +259,7 @@
 	             <a href="https://github.com/AlfonsoArriola/LeBron" class="git btn">Github</a>
 	            </div>
 		    </div>
-		    <div class="col-lg-5 col-md-12">
+		    <div class="col-lg-5 col-md-12 order-2 order-lg-1">
 		       <ul>  
 	             <li> Video Background </li>
 	             <li> Flip Card </li>
@@ -288,7 +295,7 @@
 		  </div>
 
 		  <div class="row">
-		    <div class="col-lg-7 col-md-12 project" id="custom_e_mail">
+		    <div class="col-lg-7 col-md-12 project order-2" id="custom_e_mail">
 		       <figure>
 			 	  <img src="images/e_mail.png" class="img-fluid" alt=" custom e-mail template">
 			 		<figcaption>
@@ -305,7 +312,7 @@
 	             <a href="https://github.com/AlfonsoArriola/portfolio_custom_email_template" class="git btn">Github</a>
 			 </div>
 		    </div>
-		    <div class="col-lg-5 col-md-12">
+		    <div class="col-lg-5 col-md-12 order-2 order-lg-1">
 		       <ul>            
 	             <li> <b><i>Mailchimp</i></b> for user distribution and contact management</li>
 	             <li> Users can forward to friends or unsubscribe</li>
