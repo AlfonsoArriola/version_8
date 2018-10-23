@@ -11,6 +11,13 @@
     justify-content: center;
     align-items: center;
     background: #ededed;
+  /*  font-size: 8em;*/
+}
+
+.loader p{
+    font-size: 2.2em;
+    color: #ec2c2c;
+    padding-left: 3rem;
 }
 
 .loader.hidden{
@@ -304,7 +311,7 @@ ul{
     padding: 7rem 3rem 3rem 3rem;
 }
 
-#mc_embed_signup{
+.mc_e_s{
     clear:left; 
     font-size: 1.5em;
     font-family: 'Limelight', cursive;
@@ -316,6 +323,17 @@ label, input{
 
 .sign_up_btn{
     margin: 1.5rem;
+    transition: 0.35s; 
+    font-size: .7em;
+}
+
+.sign_up_btn:hover {
+    background: #4cffbd;
+    color: LightCyan;
+    border-radius: 50%;
+    font-weight: 1000;
+    text-shadow: .5px .5px DimGray;
+
 }
 
 footer{
