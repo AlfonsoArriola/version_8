@@ -48,7 +48,7 @@
     background: #ec2c2c;
    /* background-color: #cecece; */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 130px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
    /* box-shadow: 2px 2px 2px 2px black;*/
 }
@@ -71,11 +71,12 @@
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 50;
     right: 25px;
-    font-size: 55px;
+    font-size: 75px;
     margin-left: 50px;
     color: #fbf6f0;
+
 }
 
 .i_nav div{
