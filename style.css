@@ -339,7 +339,6 @@ figcaption h3{
 .additional a{
     background: none;
     color: white;
- 
 }
 
 .additional{
@@ -456,6 +455,13 @@ footer img{
     #p1, #p2, #p3, #p4{
         background-image: url(images/controller.jpg);
     }
+     
+    .additional p{
+    margin: 11px;
+    padding: 0px 10px;
+    color: white;
+    }
+
 }
 
 @media screen and (max-width: 590px) {
