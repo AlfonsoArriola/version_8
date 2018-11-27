@@ -33,9 +33,6 @@
 }
 
 
-
-
-
 /* ************ Nav Stuff  ******************************** */
 /* The side navigation menu */
 .sidenav {
@@ -45,8 +42,7 @@
     z-index: 8; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background: #ec2c2c;
-   /* background-color: #cecece; */
+    background-color: #89b6ff; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 130px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -64,8 +60,9 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.prj_menu_links a:hover {
+    color: #ffb31c;
+    background: #211f1f;
 }
 
 /* Position and style the close button (top right corner) */
@@ -76,7 +73,6 @@
     font-size: 75px;
     margin-left: 50px;
     color: #fbf6f0;
-
 }
 
 .i_nav div{
@@ -116,7 +112,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ec2c2c;
+    background:#89b6ff;
     z-index: 9;
     text-align: center;
     box-shadow: 1px 1px 1px 1px #f8f2ed;
@@ -139,13 +135,15 @@ nav img{
 body{
     margin: 0 auto;
     padding: 0 auto;
-    background: #2a2929;
-    color: #ededed;
+    background: #fbf6f0;
+    /*background: #2a2929;*/
+    /*color: #ededed;*/
+    color: #2a2929;
     overflow-y: scroll;
     scroll-behavior: smooth;
     overflow-x:hidden;
     font-family: 'Abhaya Libre', serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 h1{
@@ -161,6 +159,10 @@ p{
     line-height: 30px;
 }
 
+.billboard{
+    margin-top: 8rem;
+}
+
 #painting{
     height: 600px;
     width: 900px;
@@ -168,7 +170,6 @@ p{
     left: 200;
     top: 20;
 }
-
 
 #p1{
     height: 200px;
@@ -222,13 +223,14 @@ p{
 #little_title{
     height: auto;
     width: auto;
-    border-left: 5px solid #ededed;
-   /* font-family: 'Limelight', cursive;*/
-    text-align: left;
+    border-left: 5px solid #2a2929;
+    font-weight: 700;
+   /* font-family: 'Limelight', cursive;
+*/  text-align: left;
     font-size: 45px;
     padding-left: 9px;
     letter-spacing: 5px;
-    color: #fff;
+    color: #2a2929;
     position: absolute;
     top: 100;
     left: 60;
@@ -243,9 +245,10 @@ p{
 }
 
 .resume{
-    background: DodgerBlue;
+    background: #ffb31c;
   /*  width: 9rem;*/
     font-size: 1.8em;
+    color: white;
 }
 
 .git{
@@ -326,7 +329,7 @@ figcaption {
 figcaption h3{
     font-weight: bold;
     font-size: 2em;
-    background: #ec2828;
+    background: #ed252f;
     display: inline-block;
     padding: .5em .7em;
     color: white;

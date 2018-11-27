@@ -36,17 +36,19 @@
 	</div>
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#intro">About</a>
-	  <a href="#f_city">NYC Database</a>
-	  <a href="#s_bakery">Bakery</a>
-	  <a href="#a_panel">Admin. Panel</a>
-	  <a href="#jz">Todo App.</a>
-	  <a href="#poke">Pokéapi Call App.</a>
-	  <a href="#a_gallery">Photo Gallery </a>
-	  <a href="#lj">CSS Grid: Lebron</a>
-	  <a href="#rum">Promotional Site</a>
-	  <a href="#custom_e_mail">Custom E-mail Template</a>
-	  <a href="#mc_embed_signup">Sign-Up Form</a>
+	  <div class="prj_menu_links">
+	  	  <a href="#intro">About</a>
+		  <a href="#f_city">NYC Database</a>
+		  <a href="#s_bakery">Bakery</a>
+		  <a href="#a_panel">Admin. Panel</a>
+		  <a href="#jz">Todo App.</a>
+		  <a href="#poke">Pokéapi Call App.</a>
+		  <a href="#a_gallery">Photo Gallery </a>
+		  <a href="#lj">CSS Grid: Lebron</a>
+		  <a href="#rum">Promotional Site</a>
+		  <a href="#custom_e_mail">Custom E-mail Template</a>
+		  <a href="#mc_embed_signup">Sign-Up Form</a>
+	  </div>
 	</div>
 
 	<span onclick="openNav()">Menu</span>
@@ -64,7 +66,7 @@
 	</nav>
 	<div class="container-fluid">
 		<!--   About _________ -->
-		<div class="row pt-5 billboard">
+		<div class="row billboard">
 			<div class="col" id="painting">
 					<div id="p1"></div>
 					<div id="p2"></div>
@@ -74,9 +76,9 @@
 			<div id="little_title"> Full Stack <br> Developer</div>
 		</div>
 		<div class="row">
-			<div class="about" id="intro">
+			<div class="px-4 about" id="intro">
 				<p>  
-		          <span>Welcome!</span>  I make web applications, front & back, specializing in <i><b>HTML</b></i>, <i><b>CSS</b></i>, <i><b>Javascript</b></i>, <i><b>Ruby</b></i>, & <i><b>Ruby On Rails</b></i>. Currently getting into <i><b>React</b></i>, because of their view on<i><b> MVC (Model, View, & Controller)</b></i>, and also, it's what the cool kids are into. Below is a link to my résumé and some of my recent projects.      
+		          <span>Welcome!</span>  Currently, I'm the webmaster of <b><i><a href="http://www.freshcityny.com/">Fresh City NY</a></i></b>; a site I designed, coded, and deployed to help my fellow New Yorkers, thanks in part from some help (and MS Excel data) from my friends.  On the side, I do small projects (examples and links provided below), Mastering Ruby on Rails and Javascript(ES6), dabbling in different frameworks and languages, read articles, go to Meetups, occasional curse the new and old gods when I run into a bug; immediately apologizes after I figure out what the bug was.  Typical Developer stuff.  
 		        </p>
 		        <br>
 		        <div class="row justify-content-center">
@@ -98,14 +100,14 @@
 				<figure>
 					<img src="images/freshcity.jpg" class="img-fluid" alt="Fresh City">
 					  <figcaption>
-					  	 <h3> <i> Fresh City</i> </h3>
+					  	 <h3> <i> Fresh City NY</i> </h3>
 					  	<div class="additional">
-					    	<p> A directory & database of free & cheap showers in NYC  </p>
+					    	<p> A directory of free & cheap showers in NYC  </p>
 					    </div>
 					  </figcaption>
 				</figure>
 			<div class="my_buttons">
-				<a href="https://fresh-city.herokuapp.com/?class=nav-link&locale=en" class="site btn">Website</a>
+				<a href="http://www.freshcityny.com/" class="site btn">Website</a>
                 <a href="https://github.com/AlfonsoArriola/Fresh_City" class="git btn">Github</a>
 			</div>
 		    </div>
@@ -118,6 +120,7 @@
 	             <li> Ruby gem <i><b>i18n</b></i> for multi-lingual use</li>
 	             <li> <i><b>Postgres</b> & </i><i><b>Postico</b></i> for back-end data storage & management</li>
 	             <li> <i><b>SASS</b></i> for styling. </li>
+	             <li> REST API Intergration(GET only,JSON format) for other developers to use their projects</li>
 	           </ul> 
 		    </div>
 		  </div>
