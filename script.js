@@ -19,11 +19,16 @@ window.onscroll = function() {slimScrollGo()};
 function slimScrollGo() {
     if (document.body.scrollTop > 288 || document.documentElement.scrollTop > 288 ){
         document.getElementById("header_nav").style.transition = "all .2s";
+        document.getElementById("my_title").style.transition = "all .19s";
+        document.getElementById("nav_menu_bars_sm").style.transition = "all .18s";
         document.getElementById("header_nav").style.height= "2.2rem";
         document.getElementById("my_title").style.fontSize = "1.1em"; 
         document.getElementById("my_title").style.textAlign = "right";
         document.getElementById("nav_menu_bars_sm").style.margin = "0px";  
     } else  {
+        document.getElementById("header_nav").style.transition = "";
+        document.getElementById("my_title").style.transition = "";
+                document.getElementById("nav_menu_bars_sm").style.transition = "";
         document.getElementById("header_nav").style.height = ""; 
         document.getElementById("my_title").style.fontSize = "";
         document.getElementById("my_title").style.textAlign = "";
