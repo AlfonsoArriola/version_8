@@ -23,14 +23,16 @@ function slimScrollGo() {
         document.getElementById("nav_menu_bars_sm").style.transition = "all .18s";
         document.getElementById("header_nav").style.height= "2.2rem";
         document.getElementById("my_title").style.fontSize = "1.1em"; 
+        document.getElementById("my_title").style.color = "black"; 
         document.getElementById("my_title").style.textAlign = "right";
         document.getElementById("nav_menu_bars_sm").style.margin = "0px";  
     } else  {
         document.getElementById("header_nav").style.transition = "all .14s";
         document.getElementById("my_title").style.transition = "all .13s";
-                document.getElementById("nav_menu_bars_sm").style.transition = "all .12s";
+        document.getElementById("nav_menu_bars_sm").style.transition = "all .12s";
         document.getElementById("header_nav").style.height = ""; 
         document.getElementById("my_title").style.fontSize = "";
+        document.getElementById("my_title").style.color = "";
         document.getElementById("my_title").style.textAlign = "";
         document.getElementById("nav_menu_bars_sm").style.margin = "";  
     }
