@@ -522,20 +522,19 @@ footer img{
         margin: 3rem 1rem;
     }
 
-    @media screen and (max-width: 390px) {
-    h1{
-        font-size: 1.6em;
-    }
 
-
-
-
-
-    @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+   @media screen and (max-height: 450px) {
+       .sidenav {padding-top: 15px;}
+       .sidenav a {font-size: 18px;}
 
 }
+
+
+
+    @media screen and (max-width: 390px) {
+    h1{
+        font-size: 1.3em;
+    }
     
 }
 
