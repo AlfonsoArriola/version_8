@@ -35,7 +35,7 @@
 
 /* ************ Nav Stuff  ******************************** */
 /* The side navigation menu */
-.sidenav {
+/*.sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -47,10 +47,10 @@
     padding-top: 130px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
    /* box-shadow: 2px 2px 2px 2px black;*/
-}
+}*/
 
 /* The navigation menu links */
-.sidenav a {
+/*.sidenav a {
     padding: 8px 10px 10px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -58,15 +58,15 @@
     display: block;
     transition: 0.3s;
 }
-
+*/
 /* When you mouse over the navigation links, change their color */
-.prj_menu_links a:hover {
+/*.prj_menu_links a:hover {
     color: #ffb31c;
     background: #211f1f;
-}
+}*/
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/*.sidenav .closebtn {
     position: absolute;
     top: 50;
     right: 25px;
@@ -103,10 +103,10 @@
 
 .i_nav:hover div { 
     width: 50px;
-}
+}*/
 
 /* Mobile Nav */
-nav{
+/*nav{
     display: block;
     height: 4rem;
     position: fixed;
@@ -128,7 +128,105 @@ nav img{
     height: 3rem;
     margin: .25rem;
 }
+*/
 
+nav{
+    --duration: .5s;
+    --easing: ease-in-out;
+    position: relative;
+    width: 220px;
+    margin: 20px;
+}
+
+nav ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: -4px 0 0 0;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    background: white;
+    transform-origin: 0 0;
+    transition: transform var(--duration) var(--easing),
+     color var(--duration) var(--easing);
+    border-radius: 4px;
+    padding: 1em 1.52em;
+}
+
+nav a:hover{
+    background: #efefef;
+}
+
+nav .sub-menu a{
+    font-size: .9em;
+    color: #666666;
+    border-left: 2em solid white;
+    padding: .75em;
+    background: linear-gradient(to right, #dddddd 2px,
+    #ffffff 2px);
+}
+
+nav .sub-menu a:hover{
+    background:  linear-gradient(to right, #dddddd 2px,
+    #efefef 2px);
+}
+
+nav header{
+  font-weight: 600;
+  display: block;
+  background: rgba(255,255,255,0.5);
+  transform-origin: 0 0;
+  transition: var(--duration) var(--easing),
+  color var(--duration) var(--easing);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+
+nav header span{
+  border: none;
+  background: transparent;
+  font-size: 1.5em;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  float: right;
+}
+
+nav footer button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: calc(1em -2px);
+  width: 100%;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing);
+  transition-delay: calc(var(--duration) + 
+  (var(--count) /2));
+  cursor: pointer;
+  outline: none; 
+  background: #cdcdcd;
+  opacity: 0;
+}
+
+nav.closed a,
+nav.closed header{
+    transform: translateY(calc(--top)* -1)
+    scaleY(0.1) scaleX(0.2);
+    transition-delay: var(--delay-in);
+    color:transparent;
+}
+
+nav.closed footer button{
+    transition-delay: 0s;
+    transform: translateY(0.7) scaleX(0.2);
+}
 
 
 /*  **************N  Main Body Content ************************/
@@ -533,7 +631,7 @@ footer img{
 
     @media screen and (max-width: 390px) {
     h1{
-        font-size: 1.3em;
+        font-size: 1.3 em;
     }
     
 }
