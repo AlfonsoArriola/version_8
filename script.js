@@ -25,7 +25,8 @@ function slimScrollGo() {
         document.getElementById("my_title").style.fontSize = "1.1em"; 
         document.getElementById("my_title").style.color = "black"; 
         document.getElementById("my_title").style.textAlign = "right";
-        document.getElementById("nav_menu_bars_sm").style.margin = "0px";  
+        document.getElementById("my_title").style.marginRight = "20px";
+        document.getElementById("nav_menu_bars_sm").style.margin = "0px 0px 0px 20px";  
     } else  {
         document.getElementById("header_nav").style.transition = "all .14s";
         document.getElementById("my_title").style.transition = "all .13s";
@@ -34,6 +35,7 @@ function slimScrollGo() {
         document.getElementById("my_title").style.fontSize = "";
         document.getElementById("my_title").style.color = "";
         document.getElementById("my_title").style.textAlign = "";
+        document.getElementById("my_title").style.margiRight = "";
         document.getElementById("nav_menu_bars_sm").style.margin = "";  
     }
 }

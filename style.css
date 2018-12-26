@@ -289,6 +289,13 @@ p{
      font-size: 170%;
 }
 
+.mobile_images{
+    display: none;
+}
+.mobile_title{
+    display: none;
+}
+
 figure{
     margin: 3px;
     overflow: hidden;
@@ -490,6 +497,18 @@ footer img{
         height: 21rem;
     }
 
+    figure{
+        display: none;
+    }
+
+    .mobile_images{
+        display: grid;
+    }
+
+    .mobile_title{
+        display: grid;
+    }
+
     ul{
         margin-bottom: 9rem;
     }
@@ -503,20 +522,19 @@ footer img{
         margin: 3rem 1rem;
     }
 
-    @media screen and (max-width: 390px) {
-    h1{
-        font-size: 1.6em;
-    }
 
-
-
-
-
-    @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+   @media screen and (max-height: 450px) {
+       .sidenav {padding-top: 15px;}
+       .sidenav a {font-size: 18px;}
 
 }
+
+
+
+    @media screen and (max-width: 390px) {
+    h1{
+        font-size: 1.3em;
+    }
     
 }
 
